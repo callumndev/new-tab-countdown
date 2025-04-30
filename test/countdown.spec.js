@@ -106,11 +106,11 @@ describe('<Countdown />', () => {
             />
         );
         wrapper.find('.date-options').simulate('click');
-        expect(wrapper.find('.custom-date-input').prop('placeholder')).toBe('custom date');
+        expect(wrapper.find('.custom-date-input').prop('placeholder')).toBe('a custom date');
         wrapper.find('.custom-date-input').simulate('focus');
         expect(wrapper.find('.custom-date-input').prop('placeholder')).toBe('description + mm/dd/yyyy');
         wrapper.find('.custom-date-input').simulate('blur');
-        expect(wrapper.find('.custom-date-input').prop('placeholder')).toBe('custom date');
+        expect(wrapper.find('.custom-date-input').prop('placeholder')).toBe('a custom date');
     });
 
 });
