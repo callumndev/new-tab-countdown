@@ -15,7 +15,7 @@ var JS_SOURCE_DIRS = [
 /* Don't transpile files in this folder */
 var JS_EXCLUDE_TRANSPILE_MATCH = /(node_modules)/;
 /* Whether to create sourcemaps or not */
-var JS_SOURCE_MAP = IS_PROD ? 'source-map' : 'eval-source-map';
+var JS_SOURCE_MAP = IS_PROD ? 'source-map' : 'cheap-module-source-map';
 
 var CSS_SOURCE_DIRS = [
   path.join(__dirname, 'src', 'styles')
